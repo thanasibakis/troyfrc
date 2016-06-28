@@ -1,0 +1,66 @@
+header
+{
+	background-color: black;
+	border-bottom: 2px solid #282828;
+	padding: 5px;
+	position:fixed;
+	width: 100%;
+}
+
+header h2
+{
+	line-height: 50px; /* should match button height */
+	margin: 0px;
+}
+
+header div#nav-button
+{
+	background: url("../images/hamburger_button.png") center center no-repeat;
+	background-size: 50%;
+	float: left; /* so it doesn't wrap the title */
+	height: 50px;
+	margin-right: 10px;
+	width: 50px;
+}
+
+@media screen and (max-device-width: 767px)
+{	
+	header div#nav-button
+	{
+		height: 150px;
+		width: 150px;
+	}
+	
+	header h2
+	{
+		line-height: 150px; /* should match button height */
+	}
+}
+
+/*header div#nav-button:hover ~ nav, header nav:hover
+{
+	max-height: 1000px;
+}*/
+
+header nav
+{
+	background-color: #282828;
+	height: 100vh;
+	margin-top: 7px; /* undo the padding-bottom + border-bottom of header */
+	max-width: 0px; /* because width alone won't transition */
+	margin-left: -5px; /* undo the padding-left of header */
+	opacity: 0.99;
+	overflow:scroll; /* so the text hides too!! */
+	position: absolute; /* so it remains above content, not pushing it down */
+	transition: max-width 0.7s ease-in;
+}
+
+header nav p
+{
+	color: #17cbeb;
+}
+
+header nav ul li
+{
+	list-style: none;
+}

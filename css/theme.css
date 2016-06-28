@@ -1,0 +1,38 @@
+/* Define the Titillium Web font */
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,700,400italic);
+
+a
+{
+	color: #677faa; /* override this by putting <p> inside the <a> */
+	text-decoration: none;
+}
+
+body
+{
+	background-color: black;
+	margin: 0px; /* hide space above navbar */
+}
+
+p, h2, h2 a
+{
+	color: white;
+	font-family:'Titillium Web', sans-serif;
+}
+
+@media screen and (max-device-width: 767px)
+{	
+	*, p, h2
+	{
+		font-size: 1.2em;
+	}
+	
+	nav ul, nav ul ul
+	{
+		font-size: 1em;
+	}
+	
+	footer
+	{
+		display: none;
+	}
+}

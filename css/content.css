@@ -1,0 +1,38 @@
+content section
+{
+	/* font-size: 1.2em; /* won't affect h2 */
+	padding: 3% 5%;
+	text-align: center;
+	/* width: 100% */ /* causes horizontal scrolling */
+}
+
+content section h2
+{
+	text-align: left;
+}
+
+content section.cyan-on-black, content section.cyan-on-black p
+{
+	background-color:black;
+	color: #17cbeb;
+}
+
+content section.black-on-cyan, content section.black-on-cyan p
+{
+	background-color:#17cbeb;
+	color: black;
+}
+
+content section img
+{
+	border-radius: 3px;
+	max-height: 500px;
+	max-width: 70%;
+	margin-bottom: 15px;
+	margin-right: 15px;
+}
+
+content section ul
+{
+	text-align: left;
+}

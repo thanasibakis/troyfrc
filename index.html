@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+	<head>
+	    <meta charset="utf-8"/>
+		<link rel="stylesheet" href="css/header.css"/>
+		<link rel="stylesheet" href="css/content.css"/>
+		<link rel="stylesheet" href="css/footer.css"/>
+		<link rel="stylesheet" href="css/theme.css"/>
+		<script type="text/javascript" src="js/nav_menu.js"></script>
+	    <title>Troy FRC 3952 - Home</title>
+		
+		<style>
+			/* include if the main section is to have an image */
+			content section#main-title
+			{
+				height: 60vh;
+				background: url('images/logo.png') center center no-repeat;
+			}
+        	
+			/* content section#main-title ~ mobile devices */
+			@media screen and (max-device-width: 767px)
+			{
+				content section#main-title
+				{
+					background-size:85%;
+				}
+			}
+        	
+        	
+			/* content section#main-title ~ non-mobile devices */
+			@media screen and (min-device-width: 768px)
+			{
+				content section#main-title
+				{
+					background-size:50%;
+				}
+			}
+			
+			content section div#countdown-frame
+			{
+				font-size: 40px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div id="nav-button"></div>
+			<h2><a href="index.html">Troy FRC 3952</a></h2>
+			<nav>
+				<ul>
+					<li>
+	               		<a href="#"><p>About Us</p></a>
+	                	<ul>
+	            			<li><a href="the_team.html"><p>The Team</p></a></li>
+							<li><a href="past_teams.html"><p>Past Teams</p></a></li>
+							<li><a href="previous_board.html"><p>Previous Board Members</p></a></li>
+	               	 	</ul>
+					</li>
+	           		<li><a href="what_is_first.html"><p>What Is FIRST?</p></a></li>
+					<li><a href="gallery.html"><p>Gallery</p></a></li>
+	           		<li><a href="news.html"><p>News</p></a></li>
+	            	<li><a href="resources.html"><p>Resources</p></a></li>
+					<li><a href="connect.html"><p>Contact Us</p></a></li>
+					<li><a href="sponsor_us.html"><p>Sponsor Us</p></a></li>
+				</ul>
+			</nav>
+		</header>
+		<br/> <br/> <br/>
+		<content>
+			<section id="main-title" class="cyan-on-black">
+				<h2>Home</h2>
+			</section>
+			<section class="black-on-cyan">
+				<h2>Welcome!</h2>
+				<p>We're Team 3952, a FIRST robotics team from Troy High School in Fullerton, California. As a team, we aim to inspire people from our school and our communities by showing others how useful and exciting technology can be! Learn more about us <a href="about_us.html">here</a>.</p>
+			</section>
+			<section class="cyan-on-black">
+				<h2>The Game</h2>
+				<p>The 2016 game was FRC Stronghold! Check out the kickoff broadcast <a href="http://corporate.comcast.com/news-information/news-feed/2016-first-robotics-competition-kickoff">here</a>.</p>
+				<p>The L.A. regional competition began on March 10. It was held at the <a href="http://www.firstinspires.org/team-event-search/event?id=17319">Long Beach Convention and Entertainment Center</a>.</p>
+				<p>Days left until competition:</p>
+				<div id="countdown-frame"><!-- This id is required by the script -->
+					<script>
+						TargetDate = "3/10/2016 7:00 AM";
+						CountActive = true;
+						CountStepper = -1;
+						LeadingZero = true;
+						DisplayFormat = "%%D%% Days, %%H%% Hours, %%M%% Minutes, %%S%% Seconds.";
+						FinishMessage = "Competition has ended!";
+					</script>
+					<script src="countdown/countdown.js"></script>
+				</div>
+			</section>
+			<section class="black-on-cyan">
+				<h2><a href="news.html">Recent Activities</a></h2>
+				<p>Download the Parent Meeting 2015-16 packet on the <a href="resources.html#our-documents">Resources</a> page.</p>
+				<p>See our new team photo on <a href="the_team.html">The Team</a> page!</p>
+				<p>The results from our diversity survey are in! View them on <a href="the_team.html#diversity">The Team</a> page.</p>
+			</section>
+		</content>
+		<footer>
+			<p>Copyright &copy; 2016 Troy Robotics Team</p>
+		</footer>
+	</body>
+</html>
